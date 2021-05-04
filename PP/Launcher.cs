@@ -18,32 +18,6 @@ namespace PPProject
         static string command_patern = @"(?<=\()[^[\]]+(?=\))|(?<=\[)[^[\]]+(?=\])|[^[\]\s]+";
         static Common common = new Common();
 
-        static void Main1(string[] args)
-        {
-
-            //var text = "add star [Milky way] zemq 12 17 31000 31000";
-            //Regex regex = new Regex(
-            //        @"(?<=\()               # Assert that the previous character is a (
-            //        [^[\]]+                 # Match one or more non-paren/brace/bracket characters
-            //        (?=\))                  # Assert that the next character is a )
-            //        |                       # or 
-            //        (?<=\[)[^[\]]+(?=\])    # Match [...]
-            //        |                       # or
-            //        [^[\]\s]+               # Match anything except whitespace or parens/braces/brackets",
-            //        RegexOptions.IgnorePatternWhitespace);
-
-            //MatchCollection results = regex.Matches(text);
-
-
-            //foreach (Match match in results)
-            //    Console.WriteLine(match.Value);
-
-            string text = "1.1B";
-            Console.WriteLine(Regex.Match(text, @"\d+.+\d").Value);
-            Console.WriteLine(Regex.Match(text, @"[A-Z]+").Value);
-
-        }
-
         static void test()
         {
 
